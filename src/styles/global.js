@@ -14,6 +14,16 @@ export default createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     color: ${({ theme }) => theme.COLORS.WHITE};
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, button, textare, a {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    outline: none;
   }
 
   a {
