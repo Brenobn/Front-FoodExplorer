@@ -21,13 +21,3 @@ export const Container = styled.button`
     opacity: 0.5;
   }
   `;
-
-  export const Text = styled.p`
-    font-family: "Poppins", sans-serif;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2.4rem;
-
-    text-align: center;
-  `;
