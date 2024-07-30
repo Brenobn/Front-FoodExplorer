@@ -29,6 +29,16 @@ export const LogoText = styled.div`
     height: 2.4rem;
   }
 
+  > svg:nth-child(1) {
+    margin-right: 6.8rem;
+    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
+  }
+
+  > svg:nth-child(4) {
+    margin-left: 6.8rem;
+    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
+  }
+
   > h1 {
     color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
     font-family: 'Roboto', sans-serif;
