@@ -1,12 +1,11 @@
 import { Container } from "./styles";
 
-import { Button } from "../../components/Button";
+import { Header } from "../../components/Header";
 
 export function Home() {
   return(
     <Container>
-      <Button />
-      <h1>Hello world!</h1>
+      <Header />
     </Container>
   );
 }
