@@ -86,12 +86,12 @@ export const DesktopMenu = styled.div`
 
 export const DesktopMenuItens = styled.div`
   display: flex;
-  padding: 2.4rem 13.4rem;
+  padding: 2.4rem 12.4rem;
   align-items: center;
   gap: 3.2rem;
 
   img {
-    width: 3.0rem;
+    width: 2.0rem;
   }
 
   h1 {
@@ -110,5 +110,9 @@ export const DesktopMenuItens = styled.div`
     display: flex;
     align-items: center;
     gap: 1.0rem;
+  }
+
+  > svg {
+    width: 4.2rem;
   }
 `;
