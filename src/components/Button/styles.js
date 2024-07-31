@@ -4,14 +4,15 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.8rem;
 
-  width: 100%;
+  width: 21.6rem;
+  height: 5.6rem;
   background-color: ${({ theme }) => theme.COLORS.RED};
   color: ${({ theme }) => theme.COLORS.RED};
   color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
   font-weight: 500;
 
-  height: 3.2rem;
   padding: 1.2rem 2.4rem;
   
   border: none;
