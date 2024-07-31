@@ -41,7 +41,7 @@ export const ContainerOutdoor = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin: 4.6rem 4.4rem 6.2rem 5.0rem;
+    margin: 4.0rem 4.4rem 6.2rem 5.0rem;
   }
 
   @media (min-width: 768px) {
@@ -50,6 +50,6 @@ export const ContainerOutdoor = styled.div`
 
     border-radius: 0.8rem;
 
-    margin: 6.0rem 10.0rem 6.2rem 5.0rem;
+    margin: 8.4rem 10.0rem 6.2rem 5.0rem;
   }
 `;
