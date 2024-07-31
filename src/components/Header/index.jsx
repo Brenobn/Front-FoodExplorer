@@ -2,12 +2,16 @@ import { useState } from "react";
 import { PiReceiptBold } from "react-icons/pi";
 import { FiMenu } from "react-icons/fi";
 
-import { HeaderContainer, HeaderItensContainer, LogoText } from "./styles";
+import { HeaderContainer, HeaderItensContainer, LogoText, DesktopMenu, DesktopMenuItens } from "./styles";
 
 import Polygon from "../../assets/Polygon.png";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(true);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
 
   return(
     <HeaderContainer>
