@@ -7,6 +7,10 @@ export const HeaderContainer = styled.header`
   width: 100%;
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_HEADER};
+
+  @media (min-width: 768px) {
+    height: 10.4rem;
+  }
 `;
 
 export const HeaderItensContainer = styled.div`
@@ -16,6 +20,10 @@ export const HeaderItensContainer = styled.div`
   justify-content: center;
   gap: 1.6rem;
   margin: 5.6rem 2.8rem 2.4rem 2.8rem;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const LogoText = styled.div`
@@ -46,5 +54,61 @@ export const LogoText = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 12.8rem;
+  }
+
+  @media (min-width: 768px) {
+    gap: 2rem;
+
+    > svg:nth-child(1) {
+      margin-right: 1rem;
+    }
+
+    > svg:nth-child(4) {
+      margin-left: 1rem;
+    }
+
+    > h1 {
+      font-size: 2.4rem;
+    }
+  }
+`;
+
+export const DesktopMenu = styled.div`
+    display: flex;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_HEADER};
+    width: 100%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+`;
+
+export const DesktopMenuItens = styled.div`
+  display: flex;
+  padding: 2.4rem 13.4rem;
+  align-items: center;
+  gap: 3.2rem;
+
+  img {
+    width: 3.0rem;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    width: 14.6rem;
+
+    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
+  }
+
+  .text-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.0rem;
   }
 `;
