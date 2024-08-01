@@ -13,8 +13,9 @@ export const Container = styled.div`
 `;
 
 export const ContainerOutdoor = styled.div`
-  width: 75%;
+  width: 82%;
   height: 12.0rem;
+
 
   border-radius: 0.3rem;
   background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
@@ -23,10 +24,10 @@ export const ContainerOutdoor = styled.div`
 
   > img {
     width: 19.0rem;
-    height: 15.0rem;
+    height: 15.8rem;
 
-    top: -3.2rem;
-    left: -2.4rem;
+    top: -4.0rem;
+    left: -2.8rem;
 
     opacity: 0.8;
     position: absolute;
@@ -41,7 +42,7 @@ export const ContainerOutdoor = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin: 4.0rem 12.4rem 6.2rem 5.0rem;
+    margin: 4.4rem 3.2rem 6.2rem 4.0rem;
 
     h1 {
       font-family: 'Poppins', sans-serif;
@@ -52,7 +53,7 @@ export const ContainerOutdoor = styled.div`
 
       color: ${({ theme }) => theme.COLORS.WHITE};
 
-      width: 21.5rem;
+      width: 22.0rem;
     }
 
     p {
@@ -64,7 +65,7 @@ export const ContainerOutdoor = styled.div`
 
       color: ${({ theme }) => theme.COLORS.WHITE};
 
-      width: 20.2rem;
+      width: 20.6rem;
     }
 
     .text-paragraph {
@@ -101,7 +102,7 @@ export const ContainerOutdoor = styled.div`
 
       color: ${({ theme }) => theme.COLORS.WHITE};
 
-      width: 47.0rem;
+      width: 47.8rem;
     }
   
     > .text-paragraph {
