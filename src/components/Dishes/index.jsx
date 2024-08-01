@@ -1,5 +1,8 @@
 import { DishesCard, DishesParagraph, DishesPrice } from "./styles";
 
+import { AddItem } from "../AddItem";
+import { Button } from "../Button";
+
 import { FiHeart } from "react-icons/fi";
 
 import RavanelloImg from "../../assets/Ravanello.png";
@@ -15,6 +18,8 @@ export function Dishes() {
       <DishesPrice>
         R$ 49,97
       </DishesPrice>
+      <AddItem />
+      <Button title="incluir" />
     </DishesCard>
   );
 }
