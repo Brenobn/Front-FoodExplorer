@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerOutdoor = styled.div`
-  width: 37.6rem;
+  width: 75%;
   height: 12.0rem;
 
   border-radius: 0.3rem;
@@ -40,13 +40,56 @@ export const ContainerOutdoor = styled.div`
     }
   }
 
+  @media (max-width: 768px) {
+    margin: 4.0rem 12.4rem 6.2rem 5.0rem;
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.5rem;
+
+      color: ${({ theme }) => theme.COLORS.WHITE};
+
+      width: 21.5rem;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.7rem;
+
+      color: ${({ theme }) => theme.COLORS.WHITE};
+
+      width: 20.2rem;
+    }
+
+    .text-paragraph {
+      margin: 3.6rem 1.0rem 2.2rem 18.0rem;
+    }
+  }
+
   @media (min-width: 768px) {
+    width: 85%;
+    height: 20.0rem;
+
+    border-radius: 0.8rem;
+
+    margin: 8.4rem 6.0rem 6.2rem 6.0rem;
+
     h1 {
       font-family: 'Poppins', sans-serif;
       font-size: 4.0rem;
       font-style: normal;
       font-weight: 500;
       line-height: 5.6rem;
+
+      color: ${({ theme }) => theme.COLORS.WHITE};
+
+      width: 44.0rem;
     }
   
     p {
@@ -55,24 +98,14 @@ export const ContainerOutdoor = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 1.6rem;
+
+      color: ${({ theme }) => theme.COLORS.WHITE};
+
+      width: 47.0rem;
     }
   
     > .text-paragraph {
       margin: 7.0rem .8rem 2.2rem 36.0rem;
     }
-  }
-
-
-  @media (max-width: 768px) {
-    margin: 4.0rem 4.4rem 6.2rem 5.0rem;
-  }
-
-  @media (min-width: 768px) {
-    width: 90%;
-    height: 20.0rem;
-
-    border-radius: 0.8rem;
-
-    margin: 8.4rem 6.0rem 6.2rem 6.0rem;
   }
 `;
