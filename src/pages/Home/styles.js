@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 
   display: grid;
@@ -109,4 +109,12 @@ export const ContainerOutdoor = styled.div`
       margin: 7.0rem .8rem 2.2rem 36.0rem;
     }
   }
+`;
+
+export const DishesContainer = styled.div`
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  margin-bottom: 3rem;
 `;
