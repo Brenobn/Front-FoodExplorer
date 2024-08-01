@@ -15,6 +15,8 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     color: ${({ theme }) => theme.COLORS.WHITE};
 
+    overflow-x: hidden;
+
     -webkit-font-smoothing: antialiased;
   }
 
@@ -37,5 +39,18 @@ export default createGlobalStyle`
 
   button:hover, a:hover {
     filter: brightness(0.9);
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4d585e;
+    border-radius: 10px;
   }
 `;
