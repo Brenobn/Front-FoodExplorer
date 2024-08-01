@@ -40,16 +40,39 @@ export const ContainerOutdoor = styled.div`
     }
   }
 
+  @media (min-width: 768px) {
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 4.0rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 5.6rem;
+    }
+  
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.6rem;
+    }
+  
+    > .text-paragraph {
+      margin: 7.0rem .8rem 2.2rem 36.0rem;
+    }
+  }
+
+
   @media (max-width: 768px) {
     margin: 4.0rem 4.4rem 6.2rem 5.0rem;
   }
 
   @media (min-width: 768px) {
-    width: 85%;
+    width: 90%;
     height: 20.0rem;
 
     border-radius: 0.8rem;
 
-    margin: 8.4rem 10.0rem 6.2rem 5.0rem;
+    margin: 8.4rem 6.0rem 6.2rem 6.0rem;
   }
 `;
