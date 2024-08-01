@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-  margin: 10.2rem 30.0rem 114.6rem -1rem;
+  margin: 1.0rem 30.0rem 2.4rem 3rem;
 
   > h2 {
     color: ${({ theme }) => theme.COLORS.WHITE};
