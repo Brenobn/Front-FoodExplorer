@@ -116,5 +116,6 @@ export const DishesContainer = styled.div`
   align-items: center;
   gap: 1.6rem;
 
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
+  margin-left: 2.4rem;
 `;
