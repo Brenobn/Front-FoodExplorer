@@ -113,6 +113,7 @@ export const ContainerOutdoor = styled.div`
 
 export const DishesContainer = styled.div`
   display: inline-flex;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 1.6rem;
 

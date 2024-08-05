@@ -22,6 +22,16 @@ export function Home() {
         <Dishes />
         <Dishes />
       </DishesContainer>
+      <Section title="Sobremesas" />
+      <DishesContainer>
+        <Dishes />
+        <Dishes />
+      </DishesContainer>
+      <Section title="Bebidas" />
+      <DishesContainer>
+        <Dishes />
+        <Dishes />
+      </DishesContainer>
     </Container>
   );
 }
