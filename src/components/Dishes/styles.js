@@ -29,6 +29,16 @@ export const DishesCard = styled.div`
     height: 8.8rem;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 768px) {
+      width: 17.6rem;
+      height: 17.6rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 30.4rem;
+    height: 46.2rem;
   }
 `;
 
@@ -41,6 +51,12 @@ export const DishesParagraph = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: 2.4rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+  }
 `;
 
 export const DishesPrice = styled.span`
@@ -52,4 +68,9 @@ export const DishesPrice = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 1.6rem;
+
+  @media (min-width: 768px) {
+    font-size: 3.2rem;
+    line-height: 5.2rem;
+  }
 `;
