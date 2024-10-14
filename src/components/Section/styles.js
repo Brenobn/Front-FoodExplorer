@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-  margin: 1.0rem 3rem 2.4rem 3rem;
+  margin: 2.4rem 25.1rem 2rem 2.4rem;
+  display: flex;
+  justify-content: center;
 
   > h2 {
     color: ${({ theme }) => theme.COLORS.WHITE};
@@ -18,5 +20,8 @@ export const SectionContainer = styled.section`
       font-size: 3.2rem;
       line-height: 4.5rem;
     }
+
+    display: flex;
+    justify-content: flex-start;
   }
 `;
