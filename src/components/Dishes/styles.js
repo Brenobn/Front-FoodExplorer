@@ -14,6 +14,8 @@ export const DishesCard = styled.div`
   border-radius: 0.8rem;
   border: 1px solid #00070A;
 
+  z-index: 1;
+
   > svg {
     color: ${({ theme }) => theme.COLORS.WHITE};
 
