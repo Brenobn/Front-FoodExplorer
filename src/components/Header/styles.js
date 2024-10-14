@@ -1,118 +1,120 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
-  grid-area: header;
-
-  height: 11.4rem;
-  width: 100%;
-
+export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_HEADER};
+  padding: 2.4rem 12.4rem;
+  width: 100%;
+  min-width: 136.8rem;
+`;
+
+export const NavContainer = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: center;
 
   @media (min-width: 768px) {
-    height: 10.4rem;
+    justify-content: unset;
   }
 `;
 
-export const HeaderItensContainer = styled.div`
+export const NavMobile = styled.div`
   display: flex;
-  height: 3.4rem;
   align-items: center;
-  justify-content: center;
+  min-height: 11.4rem;
   gap: 1.6rem;
-  margin: 5.6rem 2.8rem 2.4rem 2.8rem;
-
   @media (min-width: 768px) {
     display: none;
   }
+
+  > svg {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
 `;
 
-export const LogoText = styled.div`
+export const NavDesktop = styled.div`
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    flex-grow: 1;
+  }
+`;
+
+export const Logo = styled.a`
   display: flex;
-  height: 3.4rem;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.0rem;
+  flex-shrink: 1;
+  white-space: nowrap;
 
-  > img {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-
-  > svg:nth-child(1) {
-    margin-right: 6.8rem;
-    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
-  }
-
-  > svg:nth-child(4) {
-    margin-left: 6.8rem;
-    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
+  @media (max-width: 768px) {
+    justify-content: center;
+    min-width: 37.2rem;
   }
 
   > h1 {
-    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.0rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 12.8rem;
-  }
-
-  @media (min-width: 768px) {
-    gap: 2rem;
-
-    > svg:nth-child(1) {
-      margin-right: 1rem;
-    }
-
-    > svg:nth-child(4) {
-      margin-left: 1rem;
-    }
-
-    > h1 {
-      font-size: 2.4rem;
-    }
-  }
-`;
-
-export const DesktopMenu = styled.div`
-    display: flex;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_HEADER};
-    width: 100%;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-`;
-
-export const DesktopMenuItens = styled.div`
-  display: flex;
-  padding: 2.4rem 12.4rem;
-  align-items: center;
-  gap: 3.2rem;
-
-  img {
-    width: 2.0rem;
-  }
-
-  h1 {
-    font-family: 'Roboto', sans-serif;
     font-size: 2.4rem;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: center;
-    width: 14.6rem;
 
-    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
+    @media (max-width: 768px) {
+      font-size: 3.2rem;
+    }
   }
 
-  .text-logo {
-    display: flex;
-    align-items: center;
-    gap: 1.0rem;
-  }
-
-  > svg {
-    width: 4.2rem;
+  img {
+    @media (max-width: 768px) {
+      width: 4.2rem;
+      height: 4.2rem;
+    }
   }
 `;
+
+export const InputContainer = styled.div`
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_INPUT};
+  color: ${({ theme }) => theme.COLORS.GRAY_100};
+
+  border-radius: 0.5rem;
+
+  > svg {
+    margin-left: 1.4rem;
+  }
+
+  > input {
+    width: 100%;
+
+    padding: 1.6rem;
+
+    color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
+    background: transparent;
+    text-align: center;
+    border: none;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
+    }
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: flex;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  padding: 2rem;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;  

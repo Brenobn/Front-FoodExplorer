@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { PiReceiptBold, PiSignOutBold } from "react-icons/pi";
 import { FiMenu, FiSearch } from "react-icons/fi";
+import { FaX } from "react-icons/fa6";
 
-import { HeaderContainer, HeaderItensContainer, LogoText, DesktopMenu, DesktopMenuItens } from "./styles";
+import { Nav, NavContainer, NavMobile, NavDesktop, Logo, InputContainer, MobileMenu } from "./styles";
 
-import { Input } from "../Input";
 import { Button } from "../Button";
 
 import Polygon from "../../assets/Polygon.png";
@@ -17,28 +17,38 @@ export function Header() {
   }
 
   return(
-    <HeaderContainer>
-      <HeaderItensContainer>
-        <LogoText>
-          <FiMenu size={32}/>
-          <img src={Polygon} alt="Logo do app" />
-          <h1>Food explorer</h1>
-          <PiReceiptBold size={32} />
-        </LogoText>
-      </HeaderItensContainer>
-      {menuOpen && (
-        <DesktopMenu>
-          <DesktopMenuItens>
-            <div className="text-logo">
-              <img src={Polygon} alt="Logo do app" />
-              <h1>food explorer</h1>
-            </div>
-            <Input icon={FiSearch} placeholder="Busque por pratos ou ingredientes" />
+    <>
+      <Nav>
+        <NavContainer>
+          <NavMobile>
+            <FiMenu size={32} onClick={toggleMenu} />
+          </NavMobile>
+          <Logo>
+            <img src={Polygon} alt="Logo do app" />
+            <h1>food explorer</h1>
+          </Logo>
+          <NavDesktop>
+            <InputContainer>
+              <FiSearch size={24} />
+              <input
+                type="text"
+                placeholder="Busque por pratos ou ingredientes"
+              />
+            </InputContainer>
+
             <Button icon={PiReceiptBold} title="Pedidos(0)" />
-            <PiSignOutBold />
-          </DesktopMenuItens>
-        </DesktopMenu>
-      )}
-    </HeaderContainer>
+            <PiSignOutBold size={32} />
+          </NavDesktop>
+          <NavMobile>
+            <PiReceiptBold size={32} />
+          </NavMobile>
+        </NavContainer>
+        {menuOpen && (
+          <MobileMenu>
+            <FaX size={32} onClick={toggleMenu} />
+          </MobileMenu>
+        )}
+      </Nav>
+    </>
   );
 }
