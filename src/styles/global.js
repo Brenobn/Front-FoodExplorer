@@ -8,20 +8,19 @@ export default createGlobalStyle`
   }
 
   :root {
-    font-size: 62,5%;
+    font-size: 62.5%;
   }
 
   body {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     color: ${({ theme }) => theme.COLORS.WHITE};
+    overflow-x: hidden;
 
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button, textare, a {
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DM Sans', 'Poppins', 'Roboto', sans-serif;
     font-size: 1.6rem;
   }
 
