@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const InputContainer = styled.div`
   width: 100%;
-  height: 4.8rem;
   display: flex;
   align-items: center;
 
@@ -16,9 +15,8 @@ export const InputContainer = styled.div`
   }
 
   > input {
-    height: 4.8rem;
     width: 100%;
-    
+    flex: 1 0 0;
     padding: 1.2rem 1.4rem;
 
     color: ${({ theme }) => theme.COLORS.SIMPLE_WHITE};
