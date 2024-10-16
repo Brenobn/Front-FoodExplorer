@@ -19,7 +19,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  body, input, button, textare, a {
+  body, input, button, textarea, a {
     font-family: 'DM Sans', 'Poppins', 'Roboto', sans-serif;
     font-size: 1.6rem;
   }
