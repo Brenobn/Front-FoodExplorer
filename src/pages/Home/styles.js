@@ -4,14 +4,17 @@ export const Container = styled.div`
   width: 100%;
   min-width: 136.8rem;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 8rem;
+  margin: 12rem auto; 
 
   display: flex;
   flex-direction: column;
+  
 
   @media (max-width: 768px) {
-    max-width: 42.8rem;
+    width: 100%;
+    width: 42.8rem;
+    margin-top: 16rem;
+    padding: 0 4rem;
   } 
 `;
 
@@ -25,9 +28,10 @@ export const ContainerOutdoor = styled.div`
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   > img {
-    width: 19.0rem;
+    width: 24.0rem;
     height: 15.0rem;
 
     top: -3rem;
@@ -47,9 +51,11 @@ export const ContainerOutdoor = styled.div`
 
   @media (max-width: 768px) {
     width: 40%;
-    height: 12.0rem !important;
+    height: 12rem;
     min-height: auto;
-    margin: 5.4rem auto;
+    margin: 4rem 40rem;
+    
+    padding: 0 8rem;
 
     h1 {
       font-family: "Poppins", sans-serif;
@@ -60,7 +66,7 @@ export const ContainerOutdoor = styled.div`
 
       color: ${({ theme }) => theme.COLORS.WHITE};
 
-      width: 22rem;
+      width: auto;
     }
 
     p {
@@ -72,11 +78,11 @@ export const ContainerOutdoor = styled.div`
 
       color: ${({ theme }) => theme.COLORS.WHITE};
 
-      width: 20.6rem;
+      width: 20rem;
     }
 
     .text-paragraph {
-      padding: 4.0rem 0 0 22rem;
+      padding: 2.0rem 0 2rem 16rem;
     }
   }
 
@@ -86,7 +92,7 @@ export const ContainerOutdoor = styled.div`
 
     border-radius: 0.8rem;
 
-    margin: 16.0rem 12.4rem 6.2rem 12.4rem;
+    margin: 16.0rem auto;
 
     h1 {
       font-family: "Poppins", sans-serif;
@@ -125,7 +131,7 @@ export const DishesContainer = styled.div`
   position: relative;
   padding: 0 4rem;
 
-  margin: 6.2rem 12.3rem 4.8rem 12.3rem;
+  margin: 6.2rem 30rem 4.8rem;
 
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -135,9 +141,9 @@ export const DishesContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    margin: 2rem 40rem;
+    gap: 7.0rem;
     padding: 0 1rem;
-    margin: 2rem 0;
-    gap: 1.5rem;
   }
 `;
 
@@ -156,7 +162,7 @@ export const ContainerOfContainer = styled.div`
   );
 
   @media (max-width: 768px) {
-    max-width: 42.8rem;
+    width: 100%;
     margin: 0 auto;
   }
 `;
@@ -168,7 +174,7 @@ export const ArrowsContainer = styled.div`
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  padding: 0 10.0rem;
+  padding: 0 26rem;
   pointer-events: none;
 
   .leftArrow1, .rightArrow1,
@@ -180,7 +186,7 @@ export const ArrowsContainer = styled.div`
     background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     color: ${({ theme }) => theme.COLORS.WHITE};
-    z-index: 10;
+    z-index: 1;
   }
 
   @media (max-width: 768px) {
