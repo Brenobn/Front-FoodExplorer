@@ -1,4 +1,6 @@
-import { DishesCard, DishesParagraph, DishesPrice } from "./styles";
+import { DishesCard, DishesText, DishesPrice, DishesParagraph, AddItemContainer } from "./styles";
+
+import { PiCaretRight } from "react-icons/pi";
 
 import { AddItem } from "../AddItem";
 import { Button } from "../Button";
@@ -12,14 +14,20 @@ export function Dishes() {
     <DishesCard>
       <FiHeart />
       <img src={RavanelloImg} alt="Foto da refeição" />
-      <DishesParagraph>
+      <DishesText>
         Salada Ravanello
+        <PiCaretRight />
+      </DishesText>
+      <DishesParagraph>
+        Massa fresca com camarões e pesto. 
       </DishesParagraph>
       <DishesPrice>
         R$ 49,97
       </DishesPrice>
-      <AddItem />
-      <Button title="incluir" />
+      <AddItemContainer>
+        <AddItem />
+        <Button title="incluir" />
+      </AddItemContainer>
     </DishesCard>
   );
 }
