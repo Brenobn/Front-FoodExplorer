@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-  margin: 2.4rem 25.1rem 2rem 2.4rem;
+  margin: 2.4rem 38rem 2rem 2.4rem;
   display: flex;
   justify-content: center;
 
@@ -22,6 +22,6 @@ export const SectionContainer = styled.section`
     }
 
     display: flex;
-    justify-content: flex-start;
+    margin-right: 90rem;
   }
 `;

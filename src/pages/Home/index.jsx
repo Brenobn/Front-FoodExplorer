@@ -6,6 +6,7 @@ import { PiCaretRight, PiCaretLeft } from "react-icons/pi";
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
 import { Dishes } from "../../components/Dishes";
+import { Footer } from "../../components/Footer";
 
 import Macarrons from "../../assets/Macarrons.png";
 
@@ -108,6 +109,7 @@ export function Home() {
             </DishesContainer>
           </ContainerOfContainer>
         </Container>
+        <Footer />
     </>
   );
 }
