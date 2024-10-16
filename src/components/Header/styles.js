@@ -5,11 +5,13 @@ export const Nav = styled.nav`
   padding: 2.4rem 12.4rem;
   width: 100%;
   min-width: 136.8rem;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
 `;
 
 export const NavContainer = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: row;
   align-items: center;
   gap: 1.6rem;
@@ -49,7 +51,6 @@ export const Logo = styled.a`
   display: flex;
   align-items: center;
   gap: 1.0rem;
-  flex-shrink: 1;
   white-space: nowrap;
 
   @media (max-width: 768px) {
